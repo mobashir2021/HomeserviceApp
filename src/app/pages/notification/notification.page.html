@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title color="warning">Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of items" (click)="navigateNewLead(item.OrderId)" 
+ 
+  tappable>
+    <ion-card-header>
+      <!-- <ion-card-subtitle>Appointment Date: {{item.AppointmentDate}}</ion-card-subtitle> -->
+      <ion-card-title>{{item.Notificationtype}}</ion-card-title>
+    </ion-card-header>
+
+  
+    <ion-card-content>
+      {{item.CustomerName}} 
+    </ion-card-content>
+    <ion-card-content>
+      
+      Service : {{item.Service}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

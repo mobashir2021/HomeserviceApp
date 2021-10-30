@@ -1,0 +1,32 @@
+/* .notification-button {            
+    position: relative;
+    width: 42px;
+    top:1px;
+    right: 1px;
+    overflow: visible!important;
+}
+
+
+.notifications-badge {
+    background-color: red;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    border-radius: 100%;
+} */
+/* 
+ion-tabs{ 
+    --ion-tabbar-background-color:blue; 
+    --ion-tabs-background-color:var(--ion-tabbar-background-color, #ffffff); 
+} */
+
+/* .tabs-md .tabbar,.tabs-ios .tabbar{
+
+    background: linear-gradient(rgb(3, 132, 218) ,rgb(2, 3, 46));
+} */
+
+.ion-customcolor{
+    color:var(--ion-color-warning);
+    font-size: 20px;
+    
+}

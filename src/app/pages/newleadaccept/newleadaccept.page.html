@@ -1,0 +1,61 @@
+<ion-header class="center">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" color="warning" defaultHref="partnerhome/newleads"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="warning">Accept Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="center">
+  <div class="divheader">
+    <ion-label class="headercolor">{{Service}}</ion-label><br/>
+    <ion-label class="headercolor">{{CustomerAddress}}</ion-label><br/>
+    <ion-label class="headercolor">{{City}}</ion-label>
+  </div>
+  <ion-grid >
+    <ion-row>
+      <ion-col size="4">
+        <ion-label class="types">
+          
+          Status
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>New</ion-label>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col size="4" class="types">
+        <ion-label>
+          Lead Cost
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>{{CreditUsed}}</ion-label>
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col size="4" class="types">
+        <ion-label>
+          Services
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>{{Remarks}}</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item>
+    <ion-label>Click to pick Datetime</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY HH:mm" [(ngModel)]="pickDate"></ion-datetime>
+  </ion-item>
+
+  <div class="center">
+  <ion-button title="Accept" (click)="AcceptOrder()">
+    Accept
+  </ion-button>
+</div>
+
+</ion-content>

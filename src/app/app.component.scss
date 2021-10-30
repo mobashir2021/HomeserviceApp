@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+ion-icon{
+    //color:var(--ion-color-success-shade);
+    color:var(--ion-color-warning);
+    margin-right: 15px;
+}
+ion-item{
+    
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    //color: violet;
+    color:var(--ion-color-tertiary-shade);
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" color="warning" defaultHref="partnerhome"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="warning">New Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-card *ngFor="let item of items" (click)="navigateAccept(item.OrderId)" tappable>
+    <ion-card-header>
+      <!-- <ion-card-subtitle>Appointment Date: {{item.AppointmentDate}}</ion-card-subtitle> -->
+      <ion-card-title>{{item.Service}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{item.Remarks}} 
+    </ion-card-content>
+    <ion-card-content>
+      <!-- {{item.CustomerAddress}}  -->
+      Pincode : {{item.Area}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

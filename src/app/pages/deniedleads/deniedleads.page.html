@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" color="warning" defaultHref="partnerhome"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="warning">Cancelled Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of items" (click)="navigateLead(item.Leadgenerationid)" tappable>
+    <ion-card-header>
+      <ion-card-subtitle>Appointment Date: {{item.AppointedDate}}</ion-card-subtitle>
+      <ion-card-title>{{item.ServiceName}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{item.Orderdesc}} 
+    </ion-card-content>
+    <ion-card-content>
+      {{item.Customeraddress}} Pincode : {{item.Pincode}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

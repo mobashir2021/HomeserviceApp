@@ -1,0 +1,129 @@
+<ion-header style="background-color: #1B3813;">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start"><ion-menu-button></ion-menu-button></ion-buttons>
+    <ion-title color="warning"><div class="center"> Home Services</div></ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+
+<ion-content style="z-index: 1; " >
+  
+  <!-- <div class="center" style="padding: 0;">
+    <h4>Available Credits : <ion-label> {{Balance}}</ion-label></h4>
+    <ion-item style="border-top: 2px solid #1B3813; height: 2px; "></ion-item>
+  </div> -->
+  
+  <ion-grid class="homegrid">
+    <ion-row >
+      <ion-col size="4">
+        <ion-card (click)="clickAccount()" tappable>
+          
+          <div class="center">
+          <ion-icon name="person" class="ion-customcolor"></ion-icon>
+          <h5 class="ion-customcolor">Account</h5>
+        </div>
+        
+      
+        </ion-card>
+        
+      </ion-col>
+      <ion-col size="4">
+        <ion-card (click)="clickNewlead()" tappable>
+          <div class="center">
+            <ion-icon name="arrow-down-circle" class="ion-customcolor"></ion-icon>
+            
+          <h5 class="ion-customcolor">New Leads</h5>
+        </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card (click)="clickOutgoinglead()" tappable>
+          <div class="center">
+            <ion-icon name="sync" class="ion-customcolor"></ion-icon>
+            
+          <h5 class="ion-customcolor">Ongoing </h5>
+        </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top: -20px;">
+      <ion-col size="4">
+        <ion-card (click)="clickDeniedlead()" tappable>
+          <div class="center">
+            <ion-icon name="close-circle" class="ion-customcolor"></ion-icon>
+          <h5 class="ion-customcolor">Cancelled </h5>
+        </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card (click)="clickCompletedlead()" tappable>
+          <div class="center">
+            <ion-icon name="checkmark-circle" class="ion-customcolor"></ion-icon>
+            
+          <h5  class="ion-customcolor">Completed </h5>
+        </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card (click)="clickCreateBill()" tappable>
+          <div class="center">
+            <ion-icon name="alert-circle" class="ion-customcolor"></ion-icon>
+          
+          <h5 class="ion-customcolor">Create Bill</h5>
+        </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top: -20px;">
+      <ion-col size="4">
+        <ion-card (click)="clickViewBill()" tappable>
+          <div class="center">
+            <ion-icon name="documents" class="ion-customcolor"></ion-icon>
+            
+          <h5 class="ion-customcolor">View Bill </h5>
+        </div>
+        </ion-card>
+      </ion-col>
+      
+      <ion-col size="4">
+        <ion-card (click)="clickReports()" tappable>
+          <div class="center">
+            <ion-icon name="today" class="ion-customcolor"></ion-icon>
+            
+          <h5 class="ion-customcolor">Reports</h5>
+        </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row style="margin-top: -20px;">
+      <ion-col size="4">
+        <ion-card  (click)="clickProducts()" tappable>
+          <div class="center">
+            <ion-icon name="cart" class="ion-customcolor"></ion-icon>
+            
+          <h5 class="ion-customcolor">Products </h5>
+        </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card  (click)="clickServiceEngg()" tappable>
+          <div class="center">
+            <ion-icon name="build" class="ion-customcolor"></ion-icon>
+            
+          <h5  class="ion-customcolor">Service Engg </h5>
+        </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card  (click)="clickHelpsupport()" tappable>
+          <div class="center">
+            <ion-icon name="help-circle" class="ion-customcolor"></ion-icon>
+            
+          <h5 class="ion-customcolor">Help Support</h5>
+        </div>
+        </ion-card>
+      </ion-col>
+    </ion-row> -->
+  </ion-grid>
+</ion-content>

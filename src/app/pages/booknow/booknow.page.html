@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" color="warning" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="warning">Book Service Now</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+        <ion-card>
+          
+        <ion-item-group>
+            <img src="{{data.Categorypath}}" width="100" height="100" />
+            <h3>{{data.Categoryname}}</h3>
+            
+        </ion-item-group>
+        <ion-button expand="block" fill="outline" (click)="sendBookService(data)">Book Now</ion-button>
+      
+        </ion-card>
+        
+      
+
+</ion-content>

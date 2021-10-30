@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{data.Categoryname}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-label color="#0000FF">Choose a Service</ion-label>
+
+<ion-content>
+  
+  
+  
+  <ion-grid fixed class="homegrid">
+    <ion-row *ngFor="let row of data.subCategories">
+      <ion-col size="8">
+
+        <ion-card  (click)="clickSubcategory(row)"  tappable>
+          
+        <ion-item-group>
+          <!-- <img src="{{innerdata?.Categorypath}}" height="30" width="30" /> -->
+          <h4 class="ion-customcolor">{{row.Subcategoryname}} </h4>
+          <h4 class="ion-customcolor">Rs.{{row.Price}} </h4>
+        </ion-item-group>
+        
+      
+        </ion-card>
+        
+      </ion-col>
+       <ion-col size="2">
+        <img src="svg/arrow-forward-sharp.svg" width="150" height="90" />
+      </ion-col> 
+    </ion-row>
+  </ion-grid>
+</ion-content>

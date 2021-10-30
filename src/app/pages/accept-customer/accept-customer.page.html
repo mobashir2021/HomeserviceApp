@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" color="warning" defaultHref="partnerhome"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="warning">Accept appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card  >
+    <ion-card-header>
+      <!-- <ion-card-subtitle>Appointment Date: {{item.AppointmentDate}}</ion-card-subtitle> -->
+      <ion-card-title>{{Service}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{Customername}} 
+    </ion-card-content>
+    <ion-card-content>
+      
+      Appointed Date : {{AppointedDate}}
+    </ion-card-content>
+  </ion-card>
+
+  <div class="center">
+    <ion-button title="Accept" (click)="FinalAccept()">
+      Accept
+    </ion-button>
+  </div>
+
+</ion-content>

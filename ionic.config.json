@@ -1,0 +1,8 @@
+{
+  "name": "Ondemandservice",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

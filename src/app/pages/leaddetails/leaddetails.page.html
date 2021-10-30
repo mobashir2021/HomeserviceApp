@@ -1,0 +1,76 @@
+<ion-header class="center">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" color="warning" defaultHref="partnerhome"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="warning">Lead Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="center">
+  <div class="divheader">
+    <ion-label class="headercolor">{{Service}}</ion-label><br/>
+    <ion-label class="headercolor">{{Area}}</ion-label><br/>
+    <ion-label class="headercolor">{{City}}</ion-label>
+  </div>
+  <ion-grid >
+    <ion-row>
+      <ion-col size="4">
+        <ion-label class="types">
+          Status
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>{{Status}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col size="4" class="types">
+        <ion-label>
+          Lead Cost
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>{{CreditUsed}}</ion-label>
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col size="4" class="types">
+        <ion-label>
+          Customer Name
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>{{CustomerName}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" class="types">
+        <ion-label>
+          Customer Mobileno
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>{{CustomerPhoneNumber}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" class="types">
+        <ion-label>
+          Address
+        </ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>{{CustomerAddress}}</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="center">
+  <ion-button title="Go To Home" (click)="GoToHome()">
+    Go to Home
+  </ion-button>
+  
+</div>
+
+</ion-content>
